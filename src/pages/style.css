@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,700i&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+
+
+}
+body{
+    background: #e9e9e9;
+}
+
+/*HEADER*/
+header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+
+
+    background-color: #222;
+}
+img{
+    height: 28px;
+    margin: 13px;
+}
+ul{
+   display: flex;
+   list-style-type: none; 
+   margin-right: 20px;
+
+}
+li{
+    height: 60px;
+    width: 150px;
+    
+    
+    text-align: center;
+    padding-top: 12px;
+    transition: background 0.4s;
+}
+a{
+    
+    color:#fff;
+    text-decoration: none;
+    font-size: 23px;
+    font-family: 'roboto', sans-serif;
+}
+li:hover{
+    background: #831717;
+}
+
+
+/*SECTION .PAGE*/
+.page{
+    width: 100%;
+
+    height: 100%;
+
+
+}
+section{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 110vh;
+
+    padding-bottom: 120px;
+}
+.conversor{
+    display: flex;
+    font-size: 55px;
+    font-family: 'roboto', sans-serif;
+    font-weight: 700;
+
+    animation: move 1.3s;
+    
+}
+.conversor p{
+    margin: 0 50px;
+    color: #831717;
+}
+.conversor-input{
+    display:flex;
+}
+.conversor-input input{
+    margin-left:45px;
+
+    animation: moveLat1 1s;
+    animation-delay: 250ms;
+    animation-fill-mode: backwards;
+
+}
+.conversor-input input + input{
+    color: #831717;
+
+    animation: moveLat2 1s;
+    animation-delay: 250ms;
+    animation-fill-mode: backwards;
+
+}
+.conversor-button{
+    display:block;
+}
+input{
+    width: 490px;
+    height: 80px;
+    font-size: 28px;
+    text-align: center;
+    display: block;
+    margin-top: 30px;
+    border: solid #fff 1px;
+    display:;
+
+    font-family: 'roboto', sans-serif;
+
+    animation: scale 0.8s;
+    animation-delay: 250ms;
+    animation-fill-mode: backwards;
+
+}
+button{
+    width: 490px;
+    height: 50px;
+    font-size: 25px;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+
+    background: #831717;
+    color: #fff;
+    border: solid #fff 1px;
+
+    font-family: 'roboto', sans-serif;
+    font-weight: 700;
+
+    transition: background 0.2s;
+
+    animation: scale 0.8s;
+    animation-delay: 500ms;;
+    animation-fill-mode: backwards;
+    cursor: pointer;
+}
+button:hover{
+    background: #5e1010;
+}
+
+@keyframes scale {
+    from{
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes move {
+    from{
+        opacity: 0;
+        transform: translateY(-35%)
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0%)
+        
+    }
+}
+
+@keyframes moveLat1 {
+    from{
+        opacity: 0;
+        transform: translateX(-35%)
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0%)
+        
+    }
+}
+@keyframes moveLat2 {
+    from{
+        opacity: 0;
+        transform: translateX(35%)
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0%)
+        
+    }
+}
+
+
+/*SECTION .INFO*/
+section.info h2{
+    font-size: 35px;
+    text-decoration: upper;
+    font-family: 'roboto', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+
+    background: #5e1010;
+    width: 100%;
+    max-width: 1200px;
+    height: 50px;
+    border-radius: 10px;
+    padding: 5px;
+}
+section.info div.info-moeda{
+    background: #ffffff;
+    margin-top: 50px;
+    width: 100%;
+    max-width: 1120px;
+    padding: 20px;
+    box-shadow: 0px 0px 15px black;
+}
+
+section.info div.info-moeda h3{
+    color: #831717;
+    font-size: 23px;
+    font-family: 'roboto', sans-serif;
+    font-weight: 700;
+}
+section.info div.info-moeda p{
+    color: #222;
+    font-family: 'roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: justify;
+
+    margin-top: 10px;
+}
+
+/*FOOTER*/
+footer{
+    width: 100%;
+    height: 80px;;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 40px;
+
+    font-family: 'roboto', sans-serif;
+    font-size: 15px;
+    text-decoration: underline;
+}
